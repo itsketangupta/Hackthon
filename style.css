@@ -7,12 +7,12 @@
 body {
     margin: 0;
     min-height: 100vh;
-    color: var(--text);
+    padding: 0 12rem 0 12rem;
     background:
         radial-gradient(circle at 10% 10%, rgba(254, 100, 11, .18), transparent 28rem),
         radial-gradient(circle at 88% 4%, rgba(136, 57, 239, .15), transparent 24rem),
         linear-gradient(135deg, #eff1f5, #fff7e8 55%, #e6e9ef);
-    font-family: "Plus Jakarta Sans", Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 nav {
@@ -22,10 +22,28 @@ nav {
     padding: 1.5rem 2rem;
 }
 
+.hero_section h3 {
+    max-width: 650px;
+    margin: 22px 0 28px;
+    color: #6c6f85;
+    font-size: clamp(1.05rem, 2vw, 1.45rem);
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.hero_section {
+    margin-top: 13rem;
+}
+
+.hero_section h1 {
+    font-size: clamp(4rem, 10vw, 8.5rem);
+    text-shadow: 5px 5px 0 #d20f39;
+}
+
 nav .nav_box {
     position: fixed;
     top: 1rem;
-    width: 1134px;
+    width: 80vw;
     height: 70px;
     border: 3px solid black;
     box-shadow: 6px 6px 0 black;
@@ -59,4 +77,60 @@ nav ul {
     display: flex;
     gap: 0.5rem;
     list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+.hero .links a .prize {
+    margin-left: 2rem;
+}
+
+.hero .links a .slack:hover {
+    background: #7287fd;
+}
+
+.hero .links a .prize:hover {
+    background: rgba(255, 166, 0, 0.779);
+}
+
+.hero .links a button {
+    min-height: 58px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 1rem;
+    font-weight: 900;
+    gap: 12px;
+    padding: 14px 18px;
+    outline: black;
+    border: 3px solid black;
+    background: white;
+    text-decoration: none;
+    transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
+    cursor: pointer;
+    box-shadow: 10px 10px 0 black;
+}
+
+.hero .links a button:hover {
+    transform: translate(-4px, -4px) rotate(-1deg);
+    box-shadow: 10px 10px 0 black;
+}
+
+.prizes_section h1 {
+    max-width: 780px;
+    font-size: clamp(2rem, 6vw, 4.6rem);
+}
+
+.prizes_section {
+    margin-top: 10rem;
+}
+
+.hero_section li,
+.prizes_section li {
+    color: #d20f39;
+    font-size: .88rem;
+    font-weight: 600;
 }
