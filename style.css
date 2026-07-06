@@ -117,6 +117,7 @@ li {
 
 .hero .links a button:hover,
 .venue_txt:hover,
+.ppls_row img:hover,
 .partner:hover,
 .prizes:hover {
     transform: translate(-4px, -4px) rotate(-1deg);
@@ -125,11 +126,13 @@ li {
 }
 
 .prizes_section h1,
+.team_section h1,
 .venue_section h1,
 .mentor_section h1,
 .partners_section h1 {
     max-width: 780px;
     font-size: clamp(2rem, 6vw, 4.6rem);
+    line-height: .98;
 }
 
 .prizes_section {
@@ -140,6 +143,7 @@ li {
 .hero_section li,
 .prizes_section li,
 .venue_section li,
+.team_section li,
 .mentor_section li,
 .partners_section li {
     color: #d20f39;
@@ -261,7 +265,7 @@ li {
     justify-content: space-between;
 }
 
-.row img{
+.row img {
     border: 3px solid black;
 }
 
@@ -270,4 +274,18 @@ li {
     flex-direction: column;
     margin: 5rem 0;
     gap: 1rem;
+}
+
+.ppls_row {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 0;
+    gap: 1rem;
+}
+
+.ppls_row img {
+    border: 3px solid black;
+    border-radius: 100%;
+    box-shadow: 10px 10px 0 black;
+    transition: transform 0.18s, box-shadow 0.18s;
 }
