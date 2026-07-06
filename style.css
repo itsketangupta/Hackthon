@@ -375,3 +375,28 @@ li {
 .faq {
     margin: 5rem 0 5rem 0;
 }
+
+footer .first_line,
+footer .first_line .li_row {
+    display: flex;
+    gap: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: #e7e9ed;
+}
+footer .first_line .li_row {
+    gap: 1rem;
+}
+
+footer .first_line li a {
+    text-decoration: underline;
+    color: rgb(255, 136, 0);
+    font-weight: 700;
+}
