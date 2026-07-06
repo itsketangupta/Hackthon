@@ -30,7 +30,7 @@ Or, if you are using VS Code:
 
 ## Why I made this
 
-I just make it for a hackathon website template. 
+I just make it for a hackathon website template. I not worked for phone design so this wesite is good for tablet and desktop. I will make it responsive for mobile in future If i have time that time.
 
 ---
 

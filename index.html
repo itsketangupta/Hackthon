@@ -9,199 +9,237 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav_box">
-            <div class="logo">
-                <h2>Vadathon</h2>
+    <div class="main_body">
+        <nav>
+            <div class="nav_box">
+                <div class="logo">
+                    <h2>Vadathon</h2>
+                </div>
+                <ul>
+                    <li><a href="#hero_section">Home</a></li>
+                    <li><a href="#FAQ">FAQ</a></li>
+                    <li><a href="#prize">Prizes</a></li>
+                    <li><a href="#venue">Venue</a></li>
+                    <li><a href="#partner">Partners</a></li>
+                </ul>
             </div>
-            <ul>
-                <li><a href="#hero_section">Home</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#prize">Prizes</a></li>
-                <li><a href="#venue">Venue</a></li>
-                <li><a href="#partner">Partners</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="hero_section" id="hero_section">
-        <li>MUMBAI VADA HACKATHON</li>
-        <div class="hero">
-            <h1>Vadathon</h1>
-            <h3>A loud, crunchy, teen-built hackathon where Mumbai street-food energy meets weekend shipping.</h3>
-            <div class="links">
-                <a href="#"><button class="slack">Join our Slack</button></a>
-                <a href="#"><button class="prize">See prizes</button></a>
-            </div>
-        </div>
-    </div>
-    <div class="prizes_section" id="prize">
-        <li>PRIZES</li>
-        <h1>Stacked rewards for crunchy ideas.</h1>
-        <div class="prizes_box">
-            <div class="prizes">
-                <div class="tag_line">Grand</div>
-                <h3>Best Overall</h3>
-                <p>For the project that makes the room stop scrolling and start cheering.</p>
-            </div>
-            <div class="prizes" style="background: #e6e0ff;">
-                <div class="tag_line">Spicy</div>
-                <h3>Best Mumbai Vibe</h3>
-                <p>For a hack that feels local, playful, and unforgettable.</p>
-            </div>
-            <div class="prizes" style="background: #ddf8d7;">
-                <div class="tag_line">Fresh</div>
-                <h3>Best First Hack</h3>
-                <p>For first-time builders who show up, learn fast, and ship anyway.</p>
-            </div>
-        </div>
-    </div>
-    <div class="venue_section" id="venue">
-        <li>VENUE</li>
-        <h1>Venue partner</h1>
-        <div class="venue">
-            <div class="venue_txt">
-                <h2>Mumbai venue reveal soon</h2>
-                <p>The partner block is ready for the final venue details, address, timing, and travel notes.</p>
-            </div>
-            <div class="venue_map"></div>
-        </div>
-    </div>
-    <div class="partners_section" id="partner">
-        <li>PARTNERS</li>
-        <h1>Backers, spaces, and snack-fueled believers.</h1>
-        <div class="partners">
-            <div class="partners_box">
-                <div class="partner" style="background: #e6e9ef;">Venue Partner</div>
-                <div class="partner" style="background: #f8e7c3;">Food Partner</div>
-                <div class="partner" style="background: #d9efff;">Swag Partner</div>
-                <div class="partner" style="background: #f1d7ee;">Community Partner</div>
+        </nav>
+        <div class="hamburger">
+            <div id="menuToggle">
+                <input type="checkbox" id="menuCheckbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li>
+                        <a href="#Home">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#FAQ">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">FAQ</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#prize">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">Prizes</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#venue">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">Venue</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#partner">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">Partners</label>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-    <div class="mentor_section" id="mentor">
-        <li>PEOPLE</li>
-        <h1>Mentors & Judges</h1>
-        <div class="column">
-            <div class="row">
-                <div class="_mentor_profile">
-                    <img src="assets/ppl.png" alt="" width="263">
-                </div>
-                <div class="_mentor_profile">
-                    <img src="assets/ppl3.png" alt="" width="263">
-                </div>
-                <div class="_mentor_profile">
-                    <img src="assets/ppl2.png" alt="" width="263">
-                </div>
-                <div class="_mentor_profile">
-                    <img src="assets/ppl3.png" alt="" width="263">
-                </div>
-            </div>
-            <div class="row">
-                <div class="_mentor_profile">
-                    <img src="assets/ppl.png" alt="" width="263">
-                </div>
-                <div class="_mentor_profile">
-                    <img src="assets/ppl3.png" alt="" width="263">
-                </div>
-                <div class="_mentor_profile">
-                    <img src="assets/ppl2.png" alt="" width="263">
-                </div>
-                <div class="_mentor_profile">
-                    <img src="assets/ppl.png" alt="" width="263">
-                </div>
-            </div>
-            <div class="row">
-                <div class="_mentor_profile">
-                    <img src="assets/ppl2.png" alt="" width="263">
-                </div>
-                <div class="_mentor_profile">
-                    <img src="assets/ppl.png" alt="" width="263">
-                </div>
-                <div class="_mentor_profile">
-                    <img src="assets/ppl3.png" alt="" width="263">
-                </div>
-                <div class="_mentor_profile">
-                    <img src="assets/ppl.png" alt="" width="263">
+        <div class="hero_section" id="hero_section">
+            <li>MUMBAI VADA HACKATHON</li>
+            <div class="hero">
+                <h1>Vadathon</h1>
+                <h3>A loud, crunchy, teen-built hackathon where Mumbai street-food energy meets weekend shipping.</h3>
+                <div class="links">
+                    <a href="#"><button class="slack">Join our Slack</button></a>
+                    <a href="#"><button class="prize">See prizes</button></a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="team_section" id="core_team">
-        <li>MAIN TEAM</li>
-        <h1>The crew making Vadathon happen.</h1>
-        <div class="team">
-            <div class="ppls_row">
-                <img src="assets/ppl.png" alt="" width="132px">
-                <img src="assets/ppl2.png" alt="" width="132px">
-                <img src="assets/ppl3.png" alt="" width="132px">
-                <img src="assets/ppl2.png" alt="" width="132px">
-                <img src="assets/ppl3.png" alt="" width="132px">
+        <div class="prizes_section" id="prize">
+            <li>PRIZES</li>
+            <h1>Stacked rewards for crunchy ideas.</h1>
+            <div class="prizes_box">
+                <div class="prizes">
+                    <div class="tag_line">Grand</div>
+                    <h3>Best Overall</h3>
+                    <p>For the project that makes the room stop scrolling and start cheering.</p>
+                </div>
+                <div class="prizes" style="background: #e6e0ff;">
+                    <div class="tag_line">Spicy</div>
+                    <h3>Best Mumbai Vibe</h3>
+                    <p>For a hack that feels local, playful, and unforgettable.</p>
+                </div>
+                <div class="prizes" style="background: #ddf8d7;">
+                    <div class="tag_line">Fresh</div>
+                    <h3>Best First Hack</h3>
+                    <p>For first-time builders who show up, learn fast, and ship anyway.</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="faq_section">
-        <li style="color: grey;">FAQ</li>
-        <h1>Frequently Asked Questions</h1>
-        <div class="faq">
-            <div class="faq_box">
-                <button class="faq_question">
-                    Who can join?
-                    <div class="faq_icon">
-                        <span></span>
-                        <span></span>
+        <div class="venue_section" id="venue">
+            <li>VENUE</li>
+            <h1>Venue partner</h1>
+            <div class="venue">
+                <div class="venue_txt">
+                    <h2>Mumbai venue reveal soon</h2>
+                    <p>The partner block is ready for the final venue details, address, timing, and travel notes.</p>
+                </div>
+                <div class="venue_map"></div>
+            </div>
+        </div>
+        <div class="partners_section" id="partner">
+            <li>PARTNERS</li>
+            <h1>Backers, spaces, and snack-fueled believers.</h1>
+            <div class="partners">
+                <div class="partners_box">
+                    <div class="partner" style="background: #e6e9ef;">Venue Partner</div>
+                    <div class="partner" style="background: #f8e7c3;">Food Partner</div>
+                    <div class="partner" style="background: #d9efff;">Swag Partner</div>
+                    <div class="partner" style="background: #f1d7ee;">Community Partner</div>
+                </div>
+            </div>
+        </div>
+        <div class="mentor_section" id="mentor">
+            <li>PEOPLE</li>
+            <h1>Mentors & Judges</h1>
+            <div class="column">
+                <div class="row">
+                    <div class="mentor_profile">
+                        <img src="assets/ppl.png" alt="">
                     </div>
-
-                </button>
-
-                <div class="faq_answer">
-                    <p>Teen hackers, first-time builders, designers, coders, and curious friends who want to make
-                        something real.</p>
-                </div>
-            </div>
-
-            <div class="faq_box">
-                <button class="faq_question">
-                    Do I need a team?
-                    <div class="faq_icon">
-                        <span></span>
-                        <span></span>
+                    <div class="mentor_profile">
+                        <img src="assets/ppl3.png" alt="">
                     </div>
-
-                </button>
-
-                <div class="faq_answer">
-                    <p>No. Come solo or with friends. Team matching can happen at the event.</p>
-                </div>
-            </div>
-
-            <div class="faq_box">
-                <button class="faq_question">
-                    Is this only for expert coders?
-                    <div class="faq_icon">
-                        <span></span>
-                        <span></span>
+                    <div class="mentor_profile">
+                        <img src="assets/ppl2.png" alt="">
                     </div>
-
-                </button>
-
-                <div class="faq_answer">
-                    <p>Nope. Bring curiosity. Mentors will help with ideas, debugging, demos, and shipping.</p>
+                    <div class="mentor_profile">
+                        <img src="assets/ppl3.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mentor_profile">
+                        <img src="assets/ppl.png" alt="">
+                    </div>
+                    <div class="mentor_profile">
+                        <img src="assets/ppl3.png" alt="">
+                    </div>
+                    <div class="mentor_profile">
+                        <img src="assets/ppl2.png" alt="">
+                    </div>
+                    <div class="mentor_profile">
+                        <img src="assets/ppl.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mentor_profile">
+                        <img src="assets/ppl2.png" alt="">
+                    </div>
+                    <div class="mentor_profile">
+                        <img src="assets/ppl.png" alt="">
+                    </div>
+                    <div class="mentor_profile">
+                        <img src="assets/ppl3.png" alt="">
+                    </div>
+                    <div class="mentor_profile">
+                        <img src="assets/ppl.png" alt="">
+                    </div>
                 </div>
             </div>
-
         </div>
+        <div class="team_section" id="core_team">
+            <li>MAIN TEAM</li>
+            <h1>The crew making Vadathon happen.</h1>
+            <div class="team">
+                <div class="ppls_row">
+                    <img src="assets/ppl.png" alt="" width="132px">
+                    <img src="assets/ppl2.png" alt="" width="132px">
+                    <img src="assets/ppl3.png" alt="" width="132px">
+                    <img src="assets/ppl2.png" alt="" width="132px">
+                    <img src="assets/ppl3.png" alt="" width="132px">
+                </div>
+            </div>
+        </div>
+        <div class="faq_section" id="FAQ">
+            <li style="color: grey;">FAQ</li>
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq">
+                <div class="faq_box">
+                    <button class="faq_question">
+                        Who can join?
+                        <div class="faq_icon">
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </button>
+
+                    <div class="faq_answer">
+                        <p>Teen hackers, first-time builders, designers, coders, and curious friends who want to make
+                            something real.</p>
+                    </div>
+                </div>
+
+                <div class="faq_box">
+                    <button class="faq_question">
+                        Do I need a team?
+                        <div class="faq_icon">
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </button>
+
+                    <div class="faq_answer">
+                        <p>No. Come solo or with friends. Team matching can happen at the event.</p>
+                    </div>
+                </div>
+
+                <div class="faq_box">
+                    <button class="faq_question">
+                        Is this only for expert coders?
+                        <div class="faq_icon">
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </button>
+
+                    <div class="faq_answer">
+                        <p>Nope. Bring curiosity. Mentors will help with ideas, debugging, demos, and shipping.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="first_line">Made by teenagers, for teenagers
+                <div class="li_row">
+                    <li><a href="https://hackclub.com/">Hack Club</a></li>
+                    <li><a href="https://slack.hackclub.com/">Slack</a></li>
+                    <li><a href="https://hackclub.com/clubs">Clubs</a></li>
+                    <li><a href="https://v3.hackclub.com/hackathons/">Hackathons</a></li>
+                </div>
+            </div>
+            <div class="second_line">Landing page design & Made by Ketan</div>
+        </footer>
     </div>
-    <footer>
-        <div class="first_line">Made by teenagers, for teenagers
-            <div class="li_row">
-                <li><a href="https://hackclub.com/">Hack Club</a></li>
-                <li><a href="https://slack.hackclub.com/">Slack</a></li>
-                <li><a href="https://hackclub.com/clubs">Clubs</a></li>
-                <li><a href="https://v3.hackclub.com/hackathons/">Hackathons</a></li>
-            </div>
-        </div>
-        <div class="second_line">Landing page design & Made by Ketan</div> 
-    </footer>
+    <div class="mssg_body">This website is for desktop and tablet please visit this site in desktop or tablet.</div>
     <script src="script.js"></script>
 </body>
 
