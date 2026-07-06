@@ -45,6 +45,7 @@ nav .nav_box {
     top: 1rem;
     background: #e7e9ed;
     width: 80vw;
+    z-index: 2;
     height: 70px;
     border: 3px solid black;
     box-shadow: 6px 6px 0 black;
@@ -116,12 +117,15 @@ li {
 }
 
 .hero .links a button:hover,
+.row img:hover,
 .venue_txt:hover,
+.faq_box:hover,
 .ppls_row img:hover,
 .partner:hover,
 .prizes:hover {
     transform: translate(-4px, -4px) rotate(-1deg);
     box-shadow: 10px 10px 0 black;
+    z-index: 1;
     cursor: pointer;
 }
 
@@ -129,6 +133,7 @@ li {
 .team_section h1,
 .venue_section h1,
 .mentor_section h1,
+.faq_section h1,
 .partners_section h1 {
     max-width: 780px;
     font-size: clamp(2rem, 6vw, 4.6rem);
@@ -145,6 +150,7 @@ li {
 .venue_section li,
 .team_section li,
 .mentor_section li,
+.faq_section li,
 .partners_section li {
     color: #d20f39;
     font-size: .88rem;
@@ -267,6 +273,8 @@ li {
 
 .row img {
     border: 3px solid black;
+    box-shadow: 10px 10px 0 black;
+    transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
 }
 
 .column {
@@ -288,4 +296,82 @@ li {
     border-radius: 100%;
     box-shadow: 10px 10px 0 black;
     transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.faq_box {
+    background: #ffffff;
+    border: 3px solid black;
+    box-shadow: 10px 10px 0 black;
+    transition: transform 0.18s, box-shadow 0.18s;
+    overflow: hidden;
+    margin-bottom: 16px;
+    transition: .3s;
+}
+
+.faq_box.active {
+    border-color: #555;
+}
+
+.faq_question {
+    width: 100%;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.faq_icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.faq_icon span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    transition: .35s ease;
+}
+
+.faq_icon span:last-child {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.faq_box.active .faq_icon span:last-child {
+    transform: translate(-50%, -50%) rotate(180deg);
+    opacity: 0;
+}
+
+.faq_answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .45s ease;
+}
+
+.faq_answer p {
+    color: #b5b5b5;
+    line-height: 1.8;
+    padding: 0 24px 24px;
+    font-size: 16px;
+}
+
+.faq_box.active .faq_answer {
+    max-height: 200px;
+}
+
+.faq {
+    margin: 5rem 0 5rem 0;
 }
